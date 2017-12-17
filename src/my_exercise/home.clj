@@ -129,7 +129,7 @@
               :name "zip"
               :size "10"}]]
     [:div.button
-     [:button {:type "submit"} "Search"]]]])
+     [:input {:type "submit"} "Search"]]]])
 
 (defn page [request]
   (html5
