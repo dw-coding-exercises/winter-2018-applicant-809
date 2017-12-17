@@ -7,11 +7,13 @@
 
 (defn index
   [search-results]
-  "Hello World")
+  search-results)
 
 (defn create
   [address]
-  (model/find-by-address address))
+  (println address)
+  ; (model/find-by-address address)
+  (index address))
 
 (defroutes routes
   (POST "/search" [address] (create address)))
