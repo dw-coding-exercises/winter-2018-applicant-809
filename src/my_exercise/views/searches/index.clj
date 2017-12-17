@@ -4,4 +4,9 @@
 
 (defn display-index
   [search-results]
-  ([:div search-results]))
+  [:div
+    [:ul
+      (map
+        (fn [results] [:li
+                      [:p (h (:id results))]])
+        search-results)]])

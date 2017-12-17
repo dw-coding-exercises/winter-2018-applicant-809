@@ -15,6 +15,5 @@
 (defn find-by-address
   "process submitted city and state"
   [city state]
-  (println
     (parse-JSON
-      (get-elections city state))))
+      (get-elections city state)))
