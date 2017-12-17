@@ -4,7 +4,7 @@
 
 (defn display-index
   [search-results]
-  "Hello World")
+   search-results)
   ; [:div
   ;   [:ul
   ;     (map
