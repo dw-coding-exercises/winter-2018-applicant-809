@@ -5,7 +5,8 @@
             [my_exercise.models.search :as model]))
 
 (defn index
-  [])
+  []
+  "Hello World")
 
 (defroutes routes
   (POST "/search" [] (index)))
