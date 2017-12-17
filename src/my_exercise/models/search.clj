@@ -9,7 +9,7 @@
 (defn get-elections
   [city state]
   (:body
-    (client/get "https://api.turbovote.org/elections/upcoming?district-divisions=ocd-division/country:us/state:va,ocd-division/country:us/state:va/place:chilhowie"
+    (client/get (str "https://api.turbovote.org/elections/upcoming?district-divisions=ocd-division/country:us/state:" (clojure.string/lower-case state) ",ocd-division/country:us/state:" (clojure.string/lower-case state) "/place:" (clojure.string/lower-case city))
                 {:headers {"Accept" "application/json"}})))
 
 (defn find-by-address
