@@ -7,7 +7,7 @@
 
 (defn index
   [search-results]
-  search-results)
+  "Hello World")
 
 (defn create
   [city state]
