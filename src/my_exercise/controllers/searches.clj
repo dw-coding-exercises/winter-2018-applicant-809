@@ -10,8 +10,8 @@
   search-results)
 
 (defn create
-  [address]
-  (index (model/find-by-address)))
+  [city state]
+  (index (model/find-by-address city state)))
 
 (defroutes routes
-  (POST "/search" [address] (create address)))
+  (POST "/search" [city state] (create city state)))
