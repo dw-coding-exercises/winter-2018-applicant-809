@@ -11,9 +11,7 @@
 
 (defn create
   [address]
-  (println address)
-  ; (model/find-by-address address)
-  (index address))
+  (index (model/find-by-address)))
 
 (defroutes routes
   (POST "/search" [address] (create address)))

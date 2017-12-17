@@ -4,7 +4,7 @@
 
 (defn get-elections
   [address]
-  (println address))
+  ())
 
 
 (defn find-by-address
